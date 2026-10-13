@@ -1,0 +1,1 @@
+services:\n  - type: web\n    name: dubai-video-translator\n    env: docker\n    plan: free\n    healthCheckPath: /health\n    envVars:\n      - key: OPENAI_API_KEY\n        sync: false\n

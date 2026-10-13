@@ -1,0 +1,1 @@
+Flask>=3.1,<4\nopenai>=1.100,<2\ngunicorn>=23,<24\n

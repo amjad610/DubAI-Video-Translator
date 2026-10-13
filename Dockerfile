@@ -1,0 +1,1 @@
+FROM python:3.11-slim\nRUN apt-get update && apt-get install -y --no-install-recommends ffmpeg && rm -rf /var/lib/apt/lists/*\nWORKDIR /app\nCOPY requirements.txt .\nRUN pip install --no-cache-dir -r requirements.txt\nCOPY . .\nCMD gunicorn --bind 0.0.0.0:${PORT:-8000} --workers 1 --timeout 900 app:app\n

@@ -1,0 +1,1 @@
+# DubAI Video Translator\n\nFlask + FFmpeg video dubbing. Deploy with Docker. Add OPENAI_API_KEY as a secret environment variable in the hosting dashboard; never commit a real key. It replaces the audio with generated speech; lip-sync is not included. API usage and hosting may cost money.\n
